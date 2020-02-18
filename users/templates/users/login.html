@@ -1,0 +1,40 @@
+{% extends 'Ecommerce/basic.html' %}
+{% load crispy_forms_tags %}
+
+{% block style1 %}
+div.movedown{
+    margin-top : 10%;
+    margin-bottom : 11%;
+}
+p.heading{
+    font-size : 35px;
+    font-family : Arial;
+}
+{% endblock %}
+
+{% block body %}
+<div class="container movedown">
+    <div class="row">
+        <div class="col-12 text-left">
+            <p class="heading">Log In : </p>
+        </div>
+    </div>
+    <form method="POST">
+        {% csrf_token %} 
+        <div class="card card-outline-secondary p-5">
+                {{ form|crispy }}
+            <div class="row mt-4">
+                <div class="col-12">
+                    <button class="btn btn-primary">Log in</button>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <p>Need an account ? , Register one <a href="http://127.0.0.1:8000/profile/register">here</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

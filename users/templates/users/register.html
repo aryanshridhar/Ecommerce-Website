@@ -1,0 +1,39 @@
+{% extends 'Ecommerce/basic.html' %}
+{% load crispy_forms_tags %}
+
+{% block style1 %}
+div.movedown{
+    margin-top : 8%;
+}
+p.heading{
+    font-size : 35px;
+    font-family : Arial;
+}
+{% endblock %}
+
+{% block body %}
+<div class="container movedown mb-5">
+    <div class="row">
+        <div class="col-12 text-left">
+            <p class="heading">Join Today : </p>
+        </div>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="card card-outline-secondary p-5">
+                {{ form|crispy }}
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary w-100">Register</button>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <p>Already have an account ? Login <a href="http://127.0.0.1:8000/login">here</a></p>
+                </div>
+            </div>            
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'Ecommerce/basic.html' %}
+
+{% block style1 %}
+div.movedown{
+    margin-top : 20%;
+}
+div.bottom{
+    margin-bottom : 37%;
+}
+p.heading{
+    font-size : 20px;
+    font-family : Arial;
+}
+{% endblock %}
+
+{% block body %}
+<div class="container movedown mb-5">
+    <div class="row bottom">
+        <div class="col-12 text-left">
+            <p class="heading">You have been successfully logged out </p>
+            <p>Log In <a href="http://127.0.0.1:8000/profile/login/">again </a>?</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

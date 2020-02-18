@@ -1,0 +1,48 @@
+{% extends 'Ecommerce/basic.html' %}
+
+{% block style1 %}
+div.about1{
+    margin-top : 20%;
+    margin-bottom : 22%;
+}
+.s-m{
+    margin: 310px auto;
+    justify-content: space-around;
+    display: flex;
+    max-width: 700px;
+}
+.s-m a{
+    text-decoration: none;
+    font-size: 28px;
+    color: #f1f1f1;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    transition: 0.4s all;
+    line-height: 58px;
+    cursor: pointer;
+    background: #314652;
+    border-radius: 50%;
+}
+.s-m a:hover{
+    transform: scale(1.2);
+
+
+{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid">
+    <div class="about1">
+        <div class="about1 socialize">
+            <div class="s-m">
+              <a class="fa fa-github" href="https://github.com/aryanshridhar" target="_blank"></a>
+              <a class="fa fa-twitter" href="https://twitter.com/ShridharAryan" target="_blank"></a>
+              <a class="fa fa-google" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"></a>
+              <a class="fa fa-instagram" href="https://www.instagram.com/aryanshridhar_007/" target="_blank"></a>
+              <a class="fa fa-facebook" href="https://www.facebook.com/aryan.shridhar.1" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

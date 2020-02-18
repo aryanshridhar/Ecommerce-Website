@@ -1,0 +1,139 @@
+.
+├── db.sqlite3
+├── Ecommerce
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_auto_20200121_1607.py
+│   │   ├── 0003_auto_20200124_0839.py
+│   │   ├── 0004_review.py
+│   │   ├── 0005_auto_20200125_1142.py
+│   │   ├── 0006_delete_review.py
+│   │   ├── 0007_review.py
+│   │   ├── 0008_auto_20200202_1244.py
+│   │   ├── 0009_review_date.py
+│   │   ├── 0010_auto_20200203_0112.py
+│   │   ├── 0011_auto_20200203_1051.py
+│   │   ├── 0012_auto_20200203_1054.py
+│   │   ├── 0013_auto_20200203_1219.py
+│   │   ├── 0014_auto_20200203_1220.py
+│   │   ├── 0015_auto_20200213_1748.py
+│   │   ├── 0016_auto_20200213_1749.py
+│   │   ├── 0017_auto_20200213_1807.py
+│   │   ├── 0018_auto_20200214_1423.py
+│   │   ├── 0019_auto_20200214_1527.py
+│   │   ├── 0020_auto_20200215_1609.py
+│   │   ├── 0021_auto_20200215_1723.py
+│   │   ├── 0022_auto_20200215_1726.py
+│   │   ├── 0023_auto_20200215_1728.py
+│   │   ├── 0024_auto_20200215_1926.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── 0001_initial.cpython-37.pyc
+│   │       ├── 0002_auto_20200121_1607.cpython-37.pyc
+│   │       ├── 0003_auto_20200124_0839.cpython-37.pyc
+│   │       ├── 0004_review.cpython-37.pyc
+│   │       ├── 0005_auto_20200125_1142.cpython-37.pyc
+│   │       ├── 0006_delete_review.cpython-37.pyc
+│   │       ├── 0007_review.cpython-37.pyc
+│   │       ├── 0008_auto_20200202_1244.cpython-37.pyc
+│   │       ├── 0009_review_date.cpython-37.pyc
+│   │       ├── 0010_auto_20200203_0112.cpython-37.pyc
+│   │       ├── 0011_auto_20200203_1051.cpython-37.pyc
+│   │       ├── 0012_auto_20200203_1054.cpython-37.pyc
+│   │       ├── 0013_auto_20200203_1219.cpython-37.pyc
+│   │       ├── 0014_auto_20200203_1220.cpython-37.pyc
+│   │       ├── 0015_auto_20200213_1748.cpython-37.pyc
+│   │       ├── 0016_auto_20200213_1749.cpython-37.pyc
+│   │       ├── 0017_auto_20200213_1807.cpython-37.pyc
+│   │       ├── 0018_auto_20200214_1405.cpython-37.pyc
+│   │       ├── 0018_auto_20200214_1410.cpython-37.pyc
+│   │       ├── 0018_auto_20200214_1416.cpython-37.pyc
+│   │       ├── 0018_auto_20200214_1423.cpython-37.pyc
+│   │       ├── 0019_auto_20200214_1406.cpython-37.pyc
+│   │       ├── 0019_auto_20200214_1527.cpython-37.pyc
+│   │       ├── 0020_auto_20200214_1407.cpython-37.pyc
+│   │       ├── 0020_auto_20200215_1609.cpython-37.pyc
+│   │       ├── 0021_auto_20200215_1723.cpython-37.pyc
+│   │       ├── 0022_auto_20200215_1726.cpython-37.pyc
+│   │       ├── 0023_auto_20200215_1728.cpython-37.pyc
+│   │       ├── 0024_auto_20200215_1926.cpython-37.pyc
+│   │       └── __init__.cpython-37.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-37.pyc
+│   │   ├── apps.cpython-37.pyc
+│   │   ├── forms.cpython-37.pyc
+│   │   ├── __init__.cpython-37.pyc
+│   │   ├── models.cpython-37.pyc
+│   │   ├── urls.cpython-37.pyc
+│   │   └── views.cpython-37.pyc
+│   ├── static
+│   │   └── Ecommerce
+│   │       └── download.png
+│   ├── templates
+│   │   └── Ecommerce
+│   │       ├── basic.html
+│   │       ├── cart.html
+│   │       ├── contact.html
+│   │       ├── index.html
+│   │       ├── products.html
+│   │       └── productview.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── filstructure.txt
+├── LearnDjango
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-37.pyc
+│   │   ├── settings.cpython-37.pyc
+│   │   ├── urls.cpython-37.pyc
+│   │   └── wsgi.cpython-37.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── manage.py
+├── media
+│   └── Ecommerce
+│       └── images
+│           ├── 129322-v1-xiaomi-poco-f1-mobile-phone-large-1.jpg
+│           ├── default.jpg
+│           ├── poco1.jpg
+│           └── poco4.jpeg
+└── users
+    ├── admin.py
+    ├── apps.py
+    ├── forms.py
+    ├── __init__.py
+    ├── migrations
+    │   ├── 0001_initial.py
+    │   ├── __init__.py
+    │   └── __pycache__
+    │       ├── 0001_initial.cpython-37.pyc
+    │       └── __init__.cpython-37.pyc
+    ├── models.py
+    ├── __pycache__
+    │   ├── admin.cpython-37.pyc
+    │   ├── apps.cpython-37.pyc
+    │   ├── forms.cpython-37.pyc
+    │   ├── __init__.cpython-37.pyc
+    │   ├── models.cpython-37.pyc
+    │   ├── signals.cpython-37.pyc
+    │   ├── urls.cpython-37.pyc
+    │   └── views.cpython-37.pyc
+    ├── signals.py
+    ├── templates
+    │   └── users
+    │       ├── login.html
+    │       ├── logout.html
+    │       ├── profile.html
+    │       └── register.html
+    ├── tests.py
+    ├── urls.py
+    └── views.py
+
+19 directories, 117 files

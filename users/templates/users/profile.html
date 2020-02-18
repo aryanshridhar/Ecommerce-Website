@@ -1,0 +1,64 @@
+{% extends 'Ecommerce/basic.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block style1 %}
+div.movedown{
+    margin-top:5%;
+}
+{% endblock %}
+
+{% block body %}
+<div class="container movedown">      
+    {% if messages %}
+    {% for i in messages %}
+    <div class="alert alert-success alert-dismissible fade show custommar" role="alert">
+      <p class="pd-4 pt-4">{{ i|safe }}</p>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+      {% endfor %}
+  {% endif %}
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3 class="display-4">Profile</h3>
+        </div>
+    </div>
+    <hr>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-4 text-center">
+                <img width="200" src="/media/Ecommerce/images/{{url}}" class="img-responsive img-fluid">
+            </div>
+            <div class="col-sm-8">
+                Username : <h4>{{user.username}}</h4><br>
+                Email : <h4>{{user.email}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-left">
+            <h3>Update Info :-</h3>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-12 mt-3 mb-5">
+        <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="card card-outline-secondary p-5">
+                {{ u_form|crispy }}
+                {{p_form}}
+            <div class="row mt-4">
+                <div class="col-12">
+                    <button class="btn btn-primary w-100">Update</button>
+                </div>
+            </div>
+            <hr class="mt-4">         
+        </form>
+
+    </div>
+</div>
+    </div>
+</div>
+{% endblock %}

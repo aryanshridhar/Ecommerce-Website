@@ -1,0 +1,62 @@
+{% extends 'Ecommerce/basic.html' %}
+{% block style1 %}
+div.custom-container{
+    margin-top : 8%;
+    margin-bottom: 15%;
+}
+
+{% endblock %}
+
+{% block body %}
+<div class="container custom-container">
+    <div class="row">
+        <div class="col-8 text-left">
+            <p class="display-3">Cart</p>
+        </div>
+        {% if item %}
+        <div class="col-md-4 text-center mt-4">
+            <a href="/Ecommerce/checkout">
+                <button class="btn btn-primary">Checkout</button>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+    <hr class = "mb-5">
+    <div class="row mt-4 mb-4 text-center">
+        {% if item %}
+        <table class="table table-dark table-striped table-bordered mb-5">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price*</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for item,quantity,price in item %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ item }}</td>
+                    <td>{{ quantity }}</td>
+                    <td>{{ price }}</td>
+                </tr>
+                {% endfor %}
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="text-right">Total Amount :-</td>
+                    <td>{{total}}</td>
+                </tr>
+            </tbody>
+        </table>
+        {% else %}
+        <p class="ml-3">Looks like there isn't any item in your cart , continue shopping <a href="/Ecommerce">here</a></p>
+        {% endif %}
+    </div>
+    {% if item %}
+        <strong>* Price = Price × Quantity</strong> 
+    {% endif %}
+</div>
+{% endblock %}
