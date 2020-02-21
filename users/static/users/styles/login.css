@@ -1,0 +1,23 @@
+div.movedown{
+    margin-top : 10%;
+    margin-bottom : 11%;
+}
+p.heading{
+    font-size : 35px;
+    font-family : Arial;
+}
+@media screen and (max-width: 865px)
+{
+    div.movedown{
+        margin-top: 20%;
+    }
+
+}
+@media screen and (max-width: 390px)
+{
+    div.movedown{
+        margin-top: 30%;
+    }
+
+}
+

@@ -1,0 +1,16 @@
+div.custom-container{
+    margin-top : 8%;
+    margin-bottom: 15%;
+}
+@media screen and (max-width:700px)
+{
+    div.custom-container{
+        margin-top: 15%;
+    }
+}
+@media screen and (max-width:373px)
+{
+    div.custom-container{
+        margin-top: 20%;
+    }
+}

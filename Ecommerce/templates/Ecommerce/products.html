@@ -1,14 +1,7 @@
 {% extends 'Ecommerce/basic.html' %}
-{% block style1 %}
-div.customcont{
-    margin-top : 7%;
-}
-div.custom-card{
-    width : 20rem;
-}
-a:hover{
-    text-decoration: none;
-}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'Ecommerce/styles/productcss.css' %}"
 {% endblock %}
 
 {% block body %}
@@ -27,7 +20,7 @@ a:hover{
         {% for item in products %}
         <div class="col-lg-4">
             <a href="http://127.0.0.1:8000/Ecommerce/productview/{{item.id}}">
-            <div class="card card-outline-secondary my-4 custom-card">
+            <div class="card card-outline-secondary my-4">
                 <img class="card-img-top img-fluid" src = "/media/{{item.image1}}">
                 <div class="card-body">
                     <h3 class="card-title">{{item.product_name}}</h3>

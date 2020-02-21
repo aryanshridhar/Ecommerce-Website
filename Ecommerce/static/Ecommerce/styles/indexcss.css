@@ -1,0 +1,10 @@
+h2.head{
+    text-transform:uppercase;
+    font-size: 28px;
+    font-weight : 600;
+    color : blue;
+  }
+  h3.display{
+    margin-left : 10px;
+    margin-bottom : 41%;
+  }
