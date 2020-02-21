@@ -1,40 +1,7 @@
 {% extends 'Ecommerce/basic.html' %}
-{% block style1 %}
-
-img.rez{
-  height: auto; 
-  width: auto; 
-  max-width: 600px; 
-  max-height: 700px;
-  margin-left : 20%;
-}
-div.down{
-  margin-top : 5%;
-  margin-bottom : 2%;
-}
-h3.title{
-  font-weight : 600;
-  font-size : 40px;
-  transform: scale(1,1.2);
-}
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
-}
-h2.display{
-  color : #CC6600;
-  font-family: Arial;
-}
-p.customtext{
-  font-size:  20px;
-}
-div.custommar{
-  margin-top : 5%;
-}
-p.log{
-  font-size : 20px;
-  font-family : Arial;
-}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'Ecommerce/styles/productviewcss.css' %}">
 {% endblock %}
 
 {% block body %}

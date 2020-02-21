@@ -1,0 +1,19 @@
+div.customcont{
+    margin-top : 7%;
+}
+
+a:hover{
+    text-decoration: none;
+}
+@media screen and (max-width:825px)
+{
+    div.customcont{
+        margin-top : 15%;
+    }
+}
+@media screen and (max-width:390px)
+{
+    div.customcont{
+        margin-top : 20%;
+    }
+}

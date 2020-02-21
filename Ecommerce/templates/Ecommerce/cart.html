@@ -1,12 +1,8 @@
 {% extends 'Ecommerce/basic.html' %}
-{% block style1 %}
-div.custom-container{
-    margin-top : 8%;
-    margin-bottom: 15%;
-}
-
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'Ecommerce/styles/cartcss.css' %}">
 {% endblock %}
-
 {% block body %}
 <div class="container custom-container">
     <div class="row">

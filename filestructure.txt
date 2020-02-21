@@ -73,7 +73,17 @@
 │   │   └── views.cpython-37.pyc
 │   ├── static
 │   │   └── Ecommerce
-│   │       └── download.png
+│   │       ├── images
+│   │       │   ├── download1.png
+│   │       │   ├── download.png
+│   │       │   ├── e-commerce900x350.png
+│   │       │   └── ecoom.png
+│   │       └── styles
+│   │           ├── cartcss.css
+│   │           ├── contactcss.css
+│   │           ├── indexcss.css
+│   │           ├── productcss.css
+│   │           └── productviewcss.css
 │   ├── templates
 │   │   └── Ecommerce
 │   │       ├── basic.html
@@ -85,7 +95,7 @@
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
-├── filstructure.txt
+├── filestructure.txt
 ├── LearnDjango
 │   ├── __init__.py
 │   ├── __pycache__
@@ -104,6 +114,11 @@
 │           ├── default.jpg
 │           ├── poco1.jpg
 │           └── poco4.jpeg
+├── requirements.txt
+├── test
+│   ├── image2.jpg
+│   ├── shoe2.jpeg
+│   └── shoeimage1.jpeg
 └── users
     ├── admin.py
     ├── apps.py
@@ -126,6 +141,13 @@
     │   ├── urls.cpython-37.pyc
     │   └── views.cpython-37.pyc
     ├── signals.py
+    ├── static
+    │   └── users
+    │       └── styles
+    │           ├── login.css
+    │           ├── logoutcss.css
+    │           ├── profilecss.css
+    │           └── register.css
     ├── templates
     │   └── users
     │       ├── login.html
@@ -136,4 +158,4 @@
     ├── urls.py
     └── views.py
 
-19 directories, 117 files
+25 directories, 133 files
