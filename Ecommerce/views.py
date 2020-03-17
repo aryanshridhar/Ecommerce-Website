@@ -4,6 +4,18 @@ from django.http import HttpResponse
 from .models import Product , Review , Cart
 from .forms import ReviewForm
 from django.contrib.auth.decorators import login_required
+from rest_framework import viewsets
+from .serializers import ProductApi ,ReviewApi
+
+#Api for products
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductApi
+
+class ReviewViewSet(viewsets.ModelViewSet):
+    queryset = Review.objects.all()
+    serializer_class = ReviewApi
 
 def homepage(request): 
     products = list(Product.objects.all())
@@ -48,9 +60,6 @@ def productview(request , myid):
     item = {'pro': pressed_pro , 'form' : form , 'review' : selected_review,  'full_name' : username , 'incart' : incart}
     return render(request , 'Ecommerce/productview.html' , item)
 
-def about(request): 
-    pass 
-    
 def search(request): 
     return HttpResponse('Hello')
 
@@ -70,3 +79,6 @@ def cart(request):
 
 def contact(request): 
     return render(request , 'Ecommerce/contact.html')
+
+def api(request):
+    return HttpResponse('cart api about products')

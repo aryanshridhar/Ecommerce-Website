@@ -6,6 +6,12 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login , logout as auth_logout
 from django.contrib.auth.decorators import login_required
 from .models import Profile
+from .serializers import ProfileApi
+from rest_framework import viewsets
+
+class ProfileViewSet(viewsets.ModelViewSet):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileApi
 
 def register(request):
     if request.method == 'POST':

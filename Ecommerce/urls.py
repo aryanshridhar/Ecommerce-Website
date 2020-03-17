@@ -17,15 +17,24 @@ Including another URLconf
 # ECOMMERCE URLS.PY
 
 from . import views
-from django.urls import path
+from django.urls import path,include
+from rest_framework import routers
+from .views import ProductViewSet,ReviewViewSet
+
+router = routers.DefaultRouter()
+router.register('' , ProductViewSet)
+router1 = routers.DefaultRouter()
+router1.register('' , ReviewViewSet)
+
 
 urlpatterns = [
     path('', views.homepage , name = 'homepage'),
     path('/productview/<int:myid>' , views.productview , name = 'productview'),
     path('/checkout' , views.checkout , name = 'checkout'),
-    path('/about' , views.about , name = 'about'),
     path('/contact' , views.contact , name = 'contact'),
     path('/cart' , views.cart , name = 'cart'),
     path('/search' , views.search , name = 'search'),
-    path('/products/<str:value>' , views.products , name = 'products')
+    path('/products/<str:value>' , views.products , name = 'products'),
+    path('/cart/api/' , include(router.urls)),
+    path('/review/api/' , include(router1.urls)),
 ]
