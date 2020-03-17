@@ -47,9 +47,6 @@ def productview(request , myid):
         return redirect(f'http://127.0.0.1:8000/Ecommerce/productview/{myid}')
     item = {'pro': pressed_pro , 'form' : form , 'review' : selected_review,  'full_name' : username , 'incart' : incart}
     return render(request , 'Ecommerce/productview.html' , item)
-
-def about(request): 
-    pass 
     
 def search(request): 
     return HttpResponse('Hello')
