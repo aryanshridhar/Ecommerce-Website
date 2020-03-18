@@ -17,7 +17,7 @@ Including another URLconf
 # ECOMMERCE URLS.PY
 
 from . import views
-from .views import ProductInstanceView , ProductView , ProductListView
+from .views import ProductListView
 from django.urls import path,include
 
 
@@ -28,10 +28,6 @@ urlpatterns = [
     path('/contact' , views.contact , name = 'contact'),
     path('/cart' , views.cart , name = 'cart'),
     path('/products/<str:value>' , views.products , name = 'products'),
-    # path('/crud/product/<int:id>' , views.crudproducts , name = 'crudproducts'),
-    # path('/crud/product' , views.crudprod , name = 'crudprod'),
-    # path('/crud/product/<int:id>' , ProductInstanceView.as_view()),
-    # path('/crud/product' , ProductView.as_view()),
     path('/crud/product/<int:id>' , ProductListView.as_view()),
     path('/crud/product' , ProductListView.as_view()),
 ]

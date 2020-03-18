@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'Ecommerce.apps.EcommerceConfig',
     'users.apps.UsersConfig',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
 ]
 
 MIDDLEWARE = [
