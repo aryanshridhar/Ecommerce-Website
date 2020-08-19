@@ -20,7 +20,7 @@ class Product(models.Model):
         return self.product_name 
 
 class Review(models.Model): 
-    for_product = models.ForeignKey(Product , on_delete = models.CASCADE)
+    for_product = models.ForeignKey(Product , related_name= 'for_product', on_delete = models.CASCADE)
     Name = models.CharField(max_length=50 , default='')
     Review = models.TextField()
     Date = models.DateTimeField(default = timezone.now())
